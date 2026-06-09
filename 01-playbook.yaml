@@ -1,3 +1,5 @@
 - name: ping the server
-  hosts: 
-  tasks:  
+  hosts: roboshop # Target Server
+  tasks: # tasks == module == collection
+   - name: ping the server
+     ping: # ansible.builtin.ping
