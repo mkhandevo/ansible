@@ -7,4 +7,4 @@
     Year: "2026"
   tasks:
   - debug:
-      msg: I am executing {{tech}} command in {{os}} {{Year}}
+      msg: "I am executing {{tech}} command in {{os}} {{Year}}"
