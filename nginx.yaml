@@ -1,0 +1,12 @@
+- name: install and start Nginx
+  hosts: frontend
+  tasks:
+  - name: Install Nginx package
+    ansible.builtin.package:   ;by default ansible will consider "ansible.builtin" only or package
+      name: nginx
+      state: present
+  - name: start nginx service
+    service:    ; ansible.builtin.service
+      name: nginx
+      state: started  ; start the service
+      enabled: yes    ; enabled the service
