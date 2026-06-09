@@ -1,5 +1,5 @@
 - name: ping the server
-  hosts: roboshop # Target Server
+  hosts: frontend # Target Server
   tasks: # tasks == module == collection
    - name: ping the server
      ping: # ansible.builtin.ping
