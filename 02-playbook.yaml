@@ -1,0 +1,6 @@
+- name: demo hello
+  hosts: frontend
+  tasks:
+  - name: Hello task
+    debug:
+      msg: Hello 02playbook
