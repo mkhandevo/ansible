@@ -6,5 +6,6 @@
     os: "Linux"
     Year: "2026"
   tasks:
-  - debug:
+  - name: print varibales
+    debug:
       msg: "I am executing {{tech}} command in {{os}} {{Year}}"
