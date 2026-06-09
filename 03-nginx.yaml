@@ -3,11 +3,11 @@
   become: yes ; with sudo user execute all the below tasks as it is mentioned in top level
   tasks:
   - name: Install Nginx package
-    ansible.builtin.package:   ;by default ansible will consider "ansible.builtin" only or package
+    ansible.builtin.package:
       name: nginx
       state: present
   - name: start nginx service
-    service:    ; ansible.builtin.service
+    service:
       name: nginx
       state: started  ; start the service
       enabled: yes    ; enabled the service
