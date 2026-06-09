@@ -1,0 +1,10 @@
+- name: demo on variable
+  hosts: LocalHosts
+  connection: local # it will not ask for username & password
+  vars:
+    tech: "ansible"
+    os: "Linux"
+    Year: "2026"
+  tasks:
+  - debug:
+      msg: I am executing {{tech}} command in {{os}} {{Year}}
