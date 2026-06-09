@@ -1,13 +1,13 @@
 - name: install and start Nginx
   hosts: frontend
-  become: yes
+  become: yes  # execute with sudo user for all the below tasks (mentioned in top level)
   tasks:
   - name: Install Nginx package
-    ansible.builtin.package:
+    ansible.builtin.package:  # by default, ansible will consider "ansible.builtin" only or mention simply "package" 
       name: nginx
       state: present
   - name: start nginx service
-    service:
+    service:   # ansible.builtin.service
       name: nginx
-      state: started
-      enabled: yes
+      state: started # start the service
+      enabled: yes  # enabled the service
