@@ -1,6 +1,6 @@
 - name: demo on variable
   hosts: LocalHosts
-  # connection: local # it will not ask for username & password
+  connection: local # it will not ask for username & password
   vars:
     tech: "ansible"
     os: "Linux"
